@@ -1,14 +1,14 @@
-module.exports={
-  "development": {
+module.exports = {
     "username": "root",
-    "password": "",
+    "password": '',
     "database": "escola",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "dialect": "mysql",
-    "defile":{
+    "port":3306,
+    "define":{
       "timestamp":true,
       "underscored":true,
       "underscoredAll":true
     }
-  }
+  
 }
