@@ -13,14 +13,14 @@ module.exports = {
 
 	async store(req, res){
 		const { aluno_id } = req.params;
-		const { disciplinas, nota1, nota2 } = req.body;
+		const { disciplina, nota1, nota2 } = req.body;
 
 		const alunos = await Aluno.findByPk(aluno_id);
 		if (!alunos){
 			return res.status(400).json({"msg":"aluno não encontrado"})
 		}
 		const cadastro = await Disciplina.create({
-			disciplinas,
+			disciplina,
 			nota1,
 			nota2,
 			aluno_id,
