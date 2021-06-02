@@ -9,7 +9,7 @@ API restful NodeJS para cadastro de alunos e matérias, com expressJS e Mysql.
 ## 🔥 Instalação e execução
 
 1. Faça um clone desse repositório;
-2. Entre na pasta `cd escola`;
+2. Entre na pasta `cd API_REST_ALUNOS`;
 3. Rode `yarn` para instalar as dependências;
 4. Altere as credencias dentro de `/src/config/database.js`;
 5. Rode `yarn sequelize db:create` para criar o banco de dados;
