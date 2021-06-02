@@ -11,13 +11,17 @@ module.exports = {
           autoIncrement:true,
           allowNull: false,
         },
-        name:{
+        nome:{
           type: Sequelize.STRING,
           allowNull: false,
         },
-        age:{
+        idade:{
           type: Sequelize.INTEGER(2),
           allowNull: false,
+        },
+        telefone:{
+          type: Sequelize.STRING,
+          allowNull:false,
         },
         created_at:{
           type: Sequelize.DATE,
