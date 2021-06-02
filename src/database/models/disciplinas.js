@@ -9,7 +9,7 @@ class disciplinas extends Model{
 		},{sequelize})
 	}
 	static associate(models) {
-    	this.belongsTo(models.alunos, { foreignKey: 'alunos_id', as: 'aluno' });
+    	this.belongsTo(models.alunos, { foreignKey: 'aluno_id', as: 'aluno' });
   }
 }
-module.exports = Disciplinas;
+module.exports = disciplinas;

@@ -4,7 +4,7 @@ const { Model, DataTypes } = require('sequelize')
 class alunos extends Model{
   static init(sequelize){
     super.init({
-      node: DataTypes.STRING,
+      nome: DataTypes.STRING,
       idade: DataTypes.INTEGER(2),
       telefone: DataTypes.STRING
     }, {
